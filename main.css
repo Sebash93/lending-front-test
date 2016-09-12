@@ -1,0 +1,230 @@
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fafafc;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-weight: normal;
+}
+select,
+input[type="text"] {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #bbb;
+  outline: 0;
+  width: 100%;
+  padding: 6px 6px 6px 0px;
+  font-size: 16px;
+  color: #000;
+}
+.input-label {
+  font-size: 12px;
+  color: #00a3ad;
+}
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+.no-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+.text-right {
+  text-align: right;
+}
+.hide {
+  display: none !important;
+}
+.main-content {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 3px;
+  transform: translateY(-85px);
+  height: 75vh;
+}
+button {
+  outline: 0;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
+button.round {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  font-size: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+#title-bar {
+  background: #00a3ad;
+  color: #fff;
+  padding-bottom: 85px;
+}
+.sidebar {
+  overflow-y: scroll;
+  background: #ffffff;
+}
+.sidebar .header {
+  padding: 12px 24px;
+  background: #f4f4f4;
+  color: #bbb;
+}
+.loans-list {
+  padding-bottom: 40px;
+}
+.loan {
+  padding: 20px 30px 0px;
+  margin-right: 0;
+  margin-left: 0;
+  background: #fff;
+}
+.loan hr {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  width: 100%;
+  padding: 0;
+  margin: 15px 0 0;
+}
+.loan .product-id-label,
+.loan .date {
+  color: #bbb;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.8;
+}
+.loan .product-id {
+  color: #4f5760;
+  font-size: 16px;
+}
+.loan .amount {
+  color: #4f5760;
+  font-size: 20px;
+}
+.loan .advance {
+  color: #00cfc9;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.loan.active {
+  background: #00a3ad;
+}
+.loan.active hr {
+  background: inherit;
+}
+.loan.active .product-id-label,
+.loan.active .product-id,
+.loan.active .date,
+.loan.active .amount,
+.loan.active .advance {
+  color: #fff;
+}
+.board {
+  display: flex;
+  flex-direction: column;
+  box-shadow: -6px 0px 15px -5px rgba(50,50,50,0.75);
+}
+.board-header {
+  background: #00cfc9;
+  color: #fff;
+  position: relative;
+}
+.board-header .product-id span {
+  padding: 12px 0 2px 30px;
+  border-bottom: 1px solid #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+.board-header .headings {
+  padding: 20px 30px 15px;
+}
+.board-header .action-button {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translate(-150%, -50%);
+  z-index: 9;
+  background: #ffad00;
+  height: 58px;
+  width: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  color: #fff;
+}
+.board-content {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+.board-content .no-purchases {
+  padding-top: 40px;
+  color: #4f5760;
+}
+.board-content .no-purchases i {
+  font-size: 16px;
+  padding: 0px 6px;
+}
+.board-content .purchase-edit {
+  background: #f4f4f4;
+  padding: 30px;
+  border-bottom: 1px solid #ddd;
+}
+.board-content .purchase-edit .left-amount {
+  line-height: 31px;
+}
+.board-content .purchase-edit .actions .save {
+  background: #00a3ad;
+  color: #fff;
+  margin-right: 20px;
+}
+.board-content .purchase-edit .actions .delete {
+  border: 2px solid #00a3ad;
+  background: #fff;
+  color: #00a3ad;
+}
+.purchase {
+  border-bottom: 2px solid #ddd;
+  padding: 30px;
+  color: #4f5760;
+}
+.purchase .actions .edit {
+  background: #00a3ad;
+  color: #fff;
+  margin-right: 20px;
+}
+.purchase .actions .delete {
+  border: 2px solid #00a3ad;
+  background: #fff;
+  color: #00a3ad;
+}
+.remaining {
+  background: #00a3ad;
+  color: #fff;
+  padding: 10px 30px;
+}
+.remaining .progress-bar {
+  margin-top: 8px;
+}
+.remaining .progress-bar .bar {
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #80d1d6;
+  margin-bottom: 2px;
+}
+.remaining .progress-bar .bar .progression {
+  background: #fff;
+  height: 100%;
+  border-radius: inherit;
+}
+.remaining .indicators {
+  font-size: 12px;
+}

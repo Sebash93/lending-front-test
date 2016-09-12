@@ -1,0 +1,20 @@
+{
+  "name": "layout",
+  "authors": [
+    "Sebastian Hernandez <sebastian.hernandez@grability.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "flexboxgrid": "^6.3.2"
+  }
+}
